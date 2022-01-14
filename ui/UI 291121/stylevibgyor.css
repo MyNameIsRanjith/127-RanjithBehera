@@ -1,0 +1,16 @@
+body
+{
+    background-image: violet,indigo,blue,green,yellow,orange,red;
+    /* background-image: repeating-linear-gradient(30deg,red,blue,green,yellow); */
+    background-repeat: repeat;
+}
+div
+{
+    background-image: repeating-linear-gradient(30deg,red,blue,green,yellow);
+    background-repeat: no-repeat;
+}
+/* body
+{
+    background-image: repeating-linear-gradient(30deg,red,blue,green,yellow);
+    background-repeat: no-repeat;
+}

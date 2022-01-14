@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="layout.css"/> 
+    <title>Document</title>
+    <style>
+        img
+        {
+        -webkit-box-reflect:below 1px linear-gradient(to bottom, rgba(0,0,0,0),rgba( 0,0,0,0.2));
+        -moz-box-reflect:below 0px linear-gradient(to bottom, rgba(0,0,0,0),rgba( 0,0,0,0.2));
+        -ms-box-reflect:below 0px linear-gradient(to bottom, rgba(0,0,0,0),rgba( 0,0,0,0.2));
+        -o-box-reflect:below 0px linear-gradient(to bottom, rgba(0,0,0,0),rgba( 0,0,0,0.2));
+        }
+        #rightreflect
+        {
+        -webkit-box-reflect:right 0.01px;
+        -moz-box-reflect:below 0px linear-gradient(to bottom, rgba(0,0,0,0),rgba( 0,0,0,0.2));
+        -ms-box-reflect:below 0px linear-gradient(to bottom, rgba(0,0,0,0),rgba( 0,0,0,0.2));
+        -o-box-reflect:below 0px linear-gradient(to bottom, rgba(0,0,0,0),rgba( 0,0,0,0.2));
+        }
+        #leftreflect
+        {
+        -webkit-box-reflect:left;
+        -moz-box-reflect:below 0px linear-gradient(to bottom, rgba(0,0,0,0),rgba( 0,0,0,0.2));
+        -ms-box-reflect:below 0px linear-gradient(to bottom, rgba(0,0,0,0),rgba( 0,0,0,0.2));
+        -o-box-reflect:below 0px linear-gradient(to bottom, rgba(0,0,0,0),rgba( 0,0,0,0.2));}
+        </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th style="width: 30%">
+                <img src="yankee.jpg"/>
+            </th>
+            <th style="font-size: larger;text-align: center;">
+               World Bank Ltd
+            </th>            
+        </tr>
+        <tr id="row1col1">
+            <td>
+            <div id="div1">
+                <nav>
+                    <a href="login.html">login</a><hr>
+                    <a href="product1.html">product1</a><hr>
+                    <a href="product2.html">product2</a><hr>
+                    <a href="product3.html">product3</a><hr>
+                    <a href="product4.html">product4</a><hr>
+                    <a href="product5.html">product5</a>
+                </nav>
+            </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="height: auto">
+                    <img id="rightreflect" src="yankee.jpg" style="width:100px; height:100px">
+                    </div>
+                    <div>
+                    <img id="rightreflect" src="yankee.jpg" style="width:100px; height:100px">
+                    </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

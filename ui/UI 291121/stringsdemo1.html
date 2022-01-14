@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1><p id="original"></p></h1>
+
+    <h2>Substr</h2>
+    <p id='l'></p>
+    <div style="background-color: violet;">
+    <p>
+        <mark>Using  var s1=s.substr(7,15), the output is as below:</mark>
+    </p>
+    <p id="p1"></p>
+    </div>
+
+    <h2>Slice</h2>
+    <p id='l'></p>
+    <div style="background-color: aquamarine;">
+    <p>
+        Using  var s2=s.substr(7), the output is as below:
+    </p>
+    <p id="p2"></p>
+    </div>
+
+    <script>
+        let s="HelloEveryone,WelcomeToJavascript";
+        document.getElementById("original").innerHTML=s;
+        document.getElementById('l').innerHTML=s.length;
+        var s1=s.substr(7,15);
+        document.getElementById("p1").innerHTML=s1;
+        var s2=s.substr(7);
+        document.getElementById("p2").innerHTML=s2;
+    </script>
+</body>
+</html>

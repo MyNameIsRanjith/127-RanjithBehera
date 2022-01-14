@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="persondetails"></p>
+    <p id="alldetails"></p>
+    <script>
+        let carname="fury";
+        const person=
+        {
+            firstname:"frodobaggins",
+            city:"fromshire",
+            vehname:"shadowfax",
+            fulldetails:function()
+            {
+                return this.firstname + " " + this.city + " " +this.vehname + " " +carname;
+            }
+        };
+        document.getElementById("persondetails").innerHTML=person.firstname+ " " +person.city+ " " +person.vehname+ " "+ carname;
+        document.getElementById("alldetails").innerHTML=person.fulldetails();
+    </script>
+</body>
+</html>

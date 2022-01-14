@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+            <nav class="navbar navbar-left">
+            <!-- <div class="container-fluid"> -->
+            <a href="welcomepage.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="login.html">Login</a> |
+            <a href="careers.html">Careers</a> |
+            <a href="contacts.html">Contact</a> |
+            <a href="address.html">Address</a> |
+            <!-- </div> -->
+            </nav>
+            <nav class="navbar navbar-right">
+            <!-- <div class="container-fluid"> -->
+            
+            <input type="text" class="glyphicon glyphicon-search" aria-hidden="true" placeholder="EnterKeyword/s">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            <button class="btn btn-warning" style="border-radius: 2.5px">Submit</button>
+            <!-- </div> -->
+            </nav>
+            <br>
+    <form>
+        <fieldset>
+            <center><legend>User Registration</legend></center>
+            <table class="table table-condensed">
+                <tr>
+                    <td><label for="cname">Enter Company name</label></td>
+                    <td><input type="text" name="cname" id="cname" required></td>
+                </tr>
+                <tr>
+                    <td><label for="fname">Enter Firstname</label></td>
+                    <td><input type="text" name="fname" id="fname" required></td>
+                </tr>
+               <tr>
+                    <td><label for="lname">Enter Lastname</label></td>
+                    <td><input type="text" name="lname" id="lname" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" id="M" value="Male">Male
+                        <input type="radio" name="gender" id="F" value="Female">Female
+                        <input type="radio" name="gender" id="O" value="Other">Other
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td><label for="useremail">Enter E-mail</label></td>
+                    <td><input type="email" name="useremail" id="useremail"></td>
+                </tr>
+                <tr>
+                    <td><label for="courl">Enter URL</label></td>
+                    <td><input type="url" name="courl" id="courl"></td>
+                </tr>
+                <tr>
+                    <td><label for="dt">Enter Date</label></td>
+                    <td><input type="date" name="dt" id="dt"></td>
+                </tr>
+                <tr>
+                    <td><label for="t">Enter Time</label></td>
+                    <td><input type="time" name="t" id="t"></td>
+
+                </tr>
+                <tr>
+                    <td><label for="t1">Enter Time</label></td>
+                    <td><input type="datetime-local" name="t1" id="t1"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="m">Select Month</label></td>
+                    <td><input type="month" name="m" id="m"></td>
+                </tr>
+                <tr>
+                    <td><label for="file1">Upload File </label></td>
+                    <td><input type="file" id="file1" name="file1" multiple ></td>
+                </tr>
+                <tr>
+                    <td><label for="co1">Select Color</label></td>
+                    <td><input type="color" name="co1" id="co1"></td>
+                </tr>
+                <tr>
+                    <td><label for="no1">Enter Number</label></td>
+                    <td><input type="number" name="no1" id="no1"></td>
+                </tr>
+                <tr>
+                    <td><label for="paymentmodes">Payment Modes</label></td>
+                    <td>
+                        <input type="checkbox" name="COD" id="paymentmodes" value="COD">
+                        <label for="COD">Pay by cash</label>
+
+                        <input type="checkbox" name="DC" id="paymentmodes" value="Debit Card">
+                        <label for="DC">Pay using Debit Card</label>
+
+                        <input type="checkbox" name="CC" id="paymentmodes" value="Credit Card">
+                        <label for="CC">Pay using Credit Card</label>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="lang">Select Lanaguage</label></td>
+                    <td><select name="languages" id="lang">
+                         <optgroup label="First Group"> 
+                            <option value="C">C Programming</option>
+                            <option value="C++">C++ Programming</option>
+                            <option value="Java">Java Programming</option>
+                       </optgroup> 
+                       <optgroup label="OS Group">
+                        <option value="Linux">Linux</option>
+                        <option value="Windows">Windows</option>
+                        <option value="Android">Android</option>
+                
+                       </optgroup>
+                
+                    </select></td>
+                </tr>
+                
+                <tr><td>Meter Element</td>
+                    <td>
+                        <meter id="md" value="2" min="0" max="10">2 out of 10</meter>
+                    </td>
+                </tr>    
+                <tr>
+                    <td>
+                    <label for="comm">Enter your opinion/comments</label>
+                    </td>
+                    <td>
+                    <textarea rows="3" cols="25">
+                    </textarea>
+                </td>
+                </tr>
+
+                <tr>        
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

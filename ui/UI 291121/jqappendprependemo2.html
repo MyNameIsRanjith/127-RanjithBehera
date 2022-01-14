@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+        
+        $("#btn1").click(function(){
+        $("#p1").append("<b>I am BE(Computer Science)</b>");
+        // $("ol").append("<li>Mobiles</li>");
+        var prodname=$("#pname").val();
+        $('ol').append("<li>" + prodname + "</li>");
+        });
+        $("#btn2").click(function(){
+        $("#p1").prepend("<b>I am BE(Computer Science) prepending this.....   </b>");
+        // $("ol").append("<li>Mobiles</li>");
+        var prodname=$("#pname").val();
+        $('ol').prepend("<li>" + prodname + "</li>");
+        });
+        $('#btn3').click(function(){
+
+        var i="<p>This is a para</p>"; //create para using html
+
+   
+        $('body').append('<p>This is a para</p>');
+        // $('body').append(i); 
+
+        var j=$("<p></p>").text("this is created using <b>jquery</b>");
+        // $('body').append(j); 
+
+        var m=$("<p></p>").html("this is created using <b>jquery</b>");
+        // $('body').append(m);
+
+        var k=document.createElement("p");
+        k.innerHTML="This para is created using docuemnt.createElement() ";
+        // $('body').append(k); 
+
+        $('body').append(i,j,k,m);
+        });
+        });
+         </script>
+</head>
+<body>
+    <div style="background-color:aquamarine; height: auto; width: auto;">
+        <center>
+            <h1>page heading</h1>
+        </center>
+    </div>
+    <h1> about something</h1>
+    <p id="p1"> this is the brief introduction</p>
+    <hr/>
+    <input type=text id="pname"/>
+    <ol><li>cpu</li></ol>
+    <button class="btn btn-primary" id="btn1">appending</button>
+    <button class="btn btn-success" id="btn2">prepending</button>
+    <button class="btn btn-warning" id="btn3">creating para</button>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+
+    <script>
+    $(document).ready(function(){
+    $('#tab1,#tab2,#tab3,#tab4,#tab5,#tab6').hide();
+
+    $('#link1').mouseover(function()
+    {
+
+        $('#tab2,#tab3,#tab4,#tab5,#tab6').hide();
+        $('#tab1').show();
+
+    });
+    $('#link2').mouseover(function()
+    {
+
+        $('#tab1,#tab3,#tab4,#tab5,#tab6').hide();
+        $('#tab2').show();
+
+    });
+    $('#link3').mouseover(function()
+    {
+
+        $('#tab1,#tab2,#tab4,#tab5,#tab6').hide();
+        $('#tab3').show();
+
+    });
+    $('#link4').mouseover(function()
+    {
+
+        $('#tab2,#tab3,#tab1,#tab5,#tab6').hide();
+        $('#tab4').show();
+
+    });
+    $('#link5').mouseover(function()
+    {
+
+        $('#tab2,#tab3,#tab4,#tab1,#tab6').hide();
+        $('#tab5').show();
+
+    });
+    $('#link6').mouseover(function()
+    {
+
+        $('#tab2,#tab3,#tab4,#tab5,#tab1').hide();
+        $('#tab6').show();
+
+    });
+
+    });
+
+    </script>
+</head>
+<body>
+    
+    <div id="tab0">
+            <h1> welcome to your website</h1>
+            <h3>
+                <nav>
+                        <a id="link1">accounts</a> |
+                        <a id="link2">departments</a> |
+                        <a id="link3">class</a> |
+                        <a id="link4">other1</a> |
+                        <a id="link5">other2</a> |
+                        <a id="link6">news</a>
+                </nav>
+        </h3>
+
+        <div id="tab1">
+            <h2>this is tab 1</h2>
+            <table>
+            <tr>
+                <td>abc</td>
+                <td>abc</td>
+            </tr>
+            <tr>
+                <td>123</td>
+                <td>123</td>
+            </tr>
+            <tr>
+                <td>ABC</td>
+                <td>ABC</td>
+            </tr>
+            </table>
+
+        </div>
+
+        <div id="tab2">
+            <h2>this is tab 2</h2>
+            <table>
+            <tr>
+                <td>def</td>
+                <td>def</td>
+                <td>def</td>
+
+            </tr>
+            <tr>
+                <td><img src="chess.jpg" alt="bird" height="100px" width="100px"/></td>
+                <td><img src="bird.jpg" alt="bird" height="100px" width="100px"/></td>
+                <td><img src="chess.jpg" alt="bird" height="100px" width="100px"/></td>
+            </tr>
+        </table>
+
+        </div>
+        <div id="tab3">
+            <h2>this is tab 3</h2>
+
+            <div style="padding-left: 25%;">
+            <table>
+            <tr>
+                <td><img src="bird.jpg" alt="bird" height="100px" width="100px"/></td>
+                <td><img src="chess.jpg" alt="bird" height="100px" width="100px"/></td>
+                <td><img src="bird.jpg" alt="bird" height="100px" width="100px"/></td>
+            </tr>
+        </table>
+        </div>
+        <div style="padding-right: 25%;">
+            <table>
+            <tr>
+                <td><img src="bird.jpg" alt="bird" height="100px" width="100px"/></td>
+                <td><img src="chess.jpg" alt="bird" height="100px" width="100px"/></td>
+                <td><img src="bird.jpg" alt="bird" height="100px" width="100px"/></td>
+            </tr>
+        </table>
+        </div>
+        </div>
+        <div id="tab4">
+            <h2>this is tab 4</h2>
+
+                <form>
+                    <fieldset>
+                        <legend> <h1>tab information</h1></legend>
+                        <table border="2">
+                        <tr>
+                            <tr><td><img src="bird.jpg" alt="bird" height="100px" width="100px"/></td>
+                
+                            <td>someinformation</td>
+                            <td><label> this is some information ragarding the name of the bird, scientific name for the bird, place of origin, blah, blah, blah...</label></td></tr>
+                        </tr>
+                        <tr>
+                            <tr><td><img src="bird.jpg" alt="bird" height="100px" width="100px"/></td>
+                
+                            <td>someinformation</td>
+                            <td><label> this is some information ragarding the name of the bird, scientific name for the bird, place of origin, blah, blah, blah...</label></td></tr>
+                        </tr>
+                                                                     
+                        </table>
+                        
+                    </fieldset>
+                </form>
+        </table>
+        <form>
+            <fieldset>
+                <legend> <h1>tab information</h1></legend>
+                <table border="2">
+                <tr>
+                    <tr><td><img src="bird.jpg" alt="bird" height="100px" width="100px"/></td>
+        
+                    <td>someinformation</td>
+                    <td><label> this is some information ragarding the name of the bird, scientific name for the bird, place of origin, blah, blah, blah...</label></td></tr>
+                </tr>
+                <tr>
+                    <tr><td><img src="bird.jpg" alt="bird" height="100px" width="100px"/></td>
+        
+                    <td>someinformation</td>
+                    <td><label> this is some information ragarding the name of the bird, scientific name for the bird, place of origin, blah, blah, blah...</label></td></tr>
+                </tr>                                        
+                </table>
+                
+            </fieldset>
+        </form>
+
+        </div>
+        <div id="tab5">
+            <h2>this is tab 5</h2>
+
+            <center>
+                <form>
+                    <fieldset>
+                        <legend> <h1>tab information</h1></legend>
+                        <table border="2">
+                        <tr>
+                            <tr><td>LATEST</td>
+                            <td><textarea cols="50" rows="10"></textarea></td>
+                
+                            <td>some information</td>
+                            <td><table border="2">
+                                <tr>
+                                    <tr><td>someinformation</td>
+                                    <td><img src="bird.jpg" alt="bird" height="100px" width="100px"/></td>
+                        
+                                    <td>some information</td>
+                                    <td><img src="chess.jpg" alt="bird" height="100px" width="100px"/></td></tr>
+                                </tr>
+                                
+                                </table></td></tr>
+                        </tr>
+                        
+                        </table>
+                    </fieldset>
+                </form>
+            </center>
+        </table>
+        </div>
+        <div id="tab6">
+            <h2>this is tab 6</h2>
+            <center>
+                <form>
+                    <fieldset>
+                        <legend> <h1>news information</h1></legend>
+                        <table border="2">
+                        <tr>
+                            <tr><td><img src="chess.jpg" alt="bird" height="100px" width="100px"/></td>
+                             <td><label> this is some information ragarding the bird, blah, blah, blah...</label></td></tr>
+                
+                            <td><div><img src="bird.jpg" alt="bird" height="100px" width="100px"/></div></td>
+                            <td><label> this is some information ragarding the bird, blah, blah, blah...</label></td></tr>
+                        </tr>
+                        
+                        </table>
+                    </fieldset>
+                </form>
+            </center>
+        </div>
+    </div>
+</body>
+</html>

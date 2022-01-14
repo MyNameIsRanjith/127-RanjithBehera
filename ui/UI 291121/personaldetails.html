@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+
+</head>
+<body>
+<center>
+    <form>
+        <label>enter id</label>
+        <input type="number" name="pid" id="pid"/>
+        <br/>
+        <label>enter name</label>
+        <input type="text" name="fname" id="fname"/>
+        <br/>
+        <input type="button" class="btn btn-primary" name="sub" value="showdata" onclick="show()"/>
+    </form> 
+</center>
+<script>
+    function show()
+    {
+        // window.location.href="persondetails.html";
+        var v_pid=localStorage.getItem("pid");
+        var v_pname=localStorage.getItem("pname");
+        // alert(v_pid);
+        // alert(v_pname);
+        
+        // v_pid=sessionStorage.getItem("p_id");
+        // v_pname=sessionStorage.getItem("p_name");
+        // alert(v_pid);
+        // alert(v_pname);
+        document.getElementById("pid").value=v_pid;
+        document.getElementById("fname").value=v_pname;
+
+    }
+</script>
+</body>
+</html>

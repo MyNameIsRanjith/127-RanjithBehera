@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    
+    <script>
+        // function sayhello()
+        // {
+        //     alert("hello ");
+        // }
+        // $(document).ready(sayhello());
+        // $(document).ready(function()
+        //     {
+        //         sayhello();
+        //         var text=$('#b1').text();
+        //         alert("text()   " + text);
+        //         var html=$('#p1').html();
+        //         alert("html()   " + html);
+        //         var val=$('#t1').val();
+        //         alert(val);
+        //     });
+
+    $(document).ready(function(){
+
+        $('#btn1').click(function(){
+
+        var text_type=$('p').text();
+        alert('the para contains' +text_type);
+
+        var id_type=$('p').attr("id");
+        alert('it is in para' +id_type);
+        });
+
+    });
+    </script>
+
+</head>
+<body>
+        <input type="text" id="text1" value="this_is_the_text">
+        </br>
+        <p1 id="para1"> welcome to the website<b> from first para</b></p1>
+        <p1 id="para2"> welcome to the website<b> from second para</b></p1>
+
+        <br/>
+        <button id="btn1" >click here</button>
+        <a href="www.google.co.in">google</a>
+
+</body>
+</html>

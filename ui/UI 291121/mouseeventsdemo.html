@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    
+    <script>
+    $(document).ready(function(){
+
+    // $('*').click(function(){
+    //     $('#tab1,#tab2,#tab3').hide();
+    // });
+
+    $('#loginpage').click(function()
+    {
+        $('#tab2,#tab3').hide();
+        $('#tab1').show();
+    });
+    $('#debitpage').click(function()
+    {
+        $('#tab1,#tab3').hide();
+        $('#tab2').show();
+
+    });
+    $('#mpinpage').click(function()
+    {
+        $('#tab1,#tab2').hide();
+        $('#tab3').show();
+
+    });
+    $('submit').dblclick(function()
+    {
+        var uservalue=$('userid').val();
+        var pwdvalue=$('pwd').val();
+        alert(uservalue);
+        alert(pwdvalue);
+    });
+    $('#img1').mouseover(function()
+    {
+        alert('this is a mouseover event');
+    });
+    $('#img1').mouseleave(function()
+    {
+        alert('this is a mouseleave event');
+    });
+    $('#img1').mouseout(function()
+    {
+        alert('this is a mouseout event');
+    });
+
+    $('#userid').keypress(function()
+    {
+        alert('this is a keypress event');
+    });
+    $('#userid').keyup(function()
+    {
+        alert('this is a keyup event');
+    });
+    $('#userid').keydown(function()
+    {
+        alert('this is a keydown event');
+    });
+    });
+    </script>
+
+</head>
+<body>
+    <center>
+        <header> 
+        <h1> welcome to your bank website</h1>
+        <h3>
+        <nav nav-bar tabs>
+            <a id="loginpage">login</a> |
+            <a id="debitpage">debitcard</a> |
+            <a id="mpinpage">mPIN</a> 
+        </nav>
+    </h3>
+    </header>
+    <div id="tab1" style="width: 480; height: 640px">
+    <form>
+        <fieldset>
+            <tr>
+                <td><label for="userid"> login id</label></td>
+                <td><input type="text" id="userid" name="userid" required placeholder="enter login id"/></td>
+                </tr>
+            </br>
+            <tr><td>
+            <label for="pwd">password</label></td>
+            <td><input type="password" id="pwd" name="pwd" required placeholder="enter password"/></td>
+            </tr>
+            </br>
+            <label for="pwd">Use Virtual Keyboard</label>
+            <br/>
+            <input type="submit" value="Login"/>
+            <br/>
+            <tr>
+                <td>
+                    <a href="error" target="_blank">First time user? Register |</a>
+                </td>
+                <td>
+                    <a href="error" target="_blank">Forgot Password? |</a>
+                </td>
+                <td>
+                    <a href="error" target="_blank">Enable Login ID</a>
+                </td>
+            </tr>
+        </fieldset>
+    </form>
+    </div>
+    <div id="tab2" style="width: 480; height: 640px">
+        <form>
+            <fieldset>
+                <tr>
+                <td><label for="card">card no</label></td>
+                <td><input type="text" id="card" name="card" required placeholder="enter card no"/></td>
+                </tr>
+                <br/>
+                <tr>
+                    <td><label for="pin">PIN</label></td>
+                <td><input type="password" id="pin" name="pin" required placeholder="enter PIN"/></td>
+                </tr>
+                <br/>
+                <label for="pwd">Use Virtual Keyboard</label>
+                <br/>
+                <td><input type="text" id="userid" name="userid" /></td>
+
+                <td><input type="text" id="userid" name="userid" required placeholder="enter captcha"/></td>
+
+                <br/>
+                <input type="submit" value="Login" />
+                <br/>
+                <tr>
+                <td>
+                    <a href="error" target="_blank">First time user? Register |</a>
+                </td>
+                <td>
+                    <a href="error" target="_blank">Forgot Password? |</a>
+                </td>
+                <td>
+                    <a href="error" target="_blank">Enable Login ID</a>
+                </td>
+                </tr>
+            </fieldset>
+        </form>
+    </div>
+    <div id="tab3" style="width: 480; height: 640px">
+        <form>
+            <fieldset>
+                <tr>
+                <td><input type="radio" id="card" name="card"/>
+                <label for="userid">customer ID</label></td>
+                <td><input type="radio" id="card" name="card"/>
+                <label for="card">card no</label>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                    <td><input type="text" id="userid" name="userid" required /></td>
+                </tr>
+                <br/>
+                <label for="pwd">Enter Password</label>
+                <input type="password" id="pwd" name="pwd" required />
+                <br/>
+                <input type="submit" value="Submit" />
+                <br/>
+            <tr>
+                <td>
+                    <a href="error" target="_blank">First time user? Register |</a>
+                </td>
+                <td>
+                    <a href="error" target="_blank">Forgot Password? |</a>
+                </td>
+                <td>
+                    <a href="error" target="_blank">Enable Login ID</a>
+                </td>
+            </tr>
+            </fieldset>
+        </form>
+    </div>
+    </center>
+</body>
+</html>

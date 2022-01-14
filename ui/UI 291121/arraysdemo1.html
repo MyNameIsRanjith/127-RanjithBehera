@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+        }
+    </style>
+</head>
+<body>
+<h3>this is the 1st element of the array</h3>
+<p id="p1"></p>
+<h3>this is the 2nd element of the array</h3>
+<p id="p2"></p>
+<h3>this is the last element of the array</h3>
+<p id="lastElement"></p>   
+<hr/>
+<h3>this is the ordered list for the array</h3>
+<p id="f1" style="height: fit-content; width: fit-content; color: white;"></p>
+<hr>
+<h3>this is the unordered list for the array</h3>
+<p id="f2" style="height: fit-content; width: fit-content; color: whitesmoke;"></p>
+
+<script>
+    const person=["frodo","baggins",6];
+
+    document.getElementById('p1').innerHTML=person[0]; //Access 1st element in array
+    document.getElementById('p2').innerHTML=person[1]; //Access 2nd element in array
+    document.getElementById("lastElement").innerHTML=person[person.length-1]; //Access last element in array
+
+    // const personDet={firstname:"Jack",lastname:"Jill",age:40};
+    // document.getElementById("p3").innerHTML=personDet["firstname"];
+    
+    var t='<ol>';
+    for (let index = 0; index < person.length; index++)
+    {
+        t+='<li>' + person[index] + '</li>';
+    }
+    t+='</ol>';
+    document.getElementById("f1").innerHTML=t;
+    
+    var u='<ul>';
+    for (let index = 0; index < person.length; index++)
+    {
+        u+='<li>' + person[index] + '</li>';
+    }
+    t+='</ul>';
+    document.getElementById("f2").innerHTML=u;
+</script>
+</body>
+</html>

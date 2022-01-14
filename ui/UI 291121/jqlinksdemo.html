@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+
+    <script>
+    $(document).ready(function(){
+    $('#b1').click(function()
+    {
+    // $('ul li:first').hide();//only grapes hides
+    //$('ul li:first-child').hide(); //grapes and idli
+    // $('ul li:nth-child').hide();nth child
+    $('ul li:nth-child(2)').hide(); //2nd nth child
+    });
+    $('#b1').click(function()
+    {
+
+    });
+    });
+
+    </script>
+
+</head>
+<body>
+
+    <ul>
+        <li >google</li>
+        <li>duckduckgo</li>
+        <li>bing</li>
+        <li>yahoo</li>
+    </ul>
+    <button id="b1">Click</button>
+    
+</body>
+</html>

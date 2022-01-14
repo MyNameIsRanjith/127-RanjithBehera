@@ -1,0 +1,21 @@
+$("*")--- select all elements
+$(this)-----current element
+$("p.intro")----select all <p> elements with class=intro
+$("p:first")-- select first p element
+$("ul li:first")-- select first li element of the first ul- only A  will be  selected
+
+<ul>
+<li>A</li>
+<li>B</li>
+
+</ul>
+<li>C</li>
+<li<D</li>
+<ul>
+</ul>
+
+$("ul li:first-child")----select the first li element of every ul----A and C will be selected
+
+$("[href]")--all element with href attribute
+
+$("a[target='_blank']")---select all the a element with target attribute value=_blank

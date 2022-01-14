@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function()
+    {
+        $('h1').click(function()
+        {
+        $(".c1").css('background-color','red');
+        $(".c1").css('color','Blue');
+        // $('.c1').css('fontSize','20px');
+        $('.c1').css('font-style','bold');
+    });
+
+        $(":button").click(function()
+    {
+    //code 1
+    //:button means input type button and other button
+    alert("Both are button --- input type button and other button");
+    });
+
+    $(":submit").click(function()
+    {
+    //code 2
+    //all input type-- button and  submit clicked
+    alert("input type submit clicked");
+    });
+});
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <p>This is paragraph</p>
+    <img src="carrom.jpg" height="100px" width="100px"/> 
+
+    <form>
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label>First Name</label>
+            <input type="text" id="fname" />
+            <br/>
+            <label>Last Name</label>
+            <input type="text" id="lname" />
+            <br/>
+            <input type="button" class="c1" value="Submit" />
+            <!-- //only code 1 -->
+
+            <button class="c1">Submit Data here</button>
+            <!-- // code1 and code 2 -->
+
+            <input type="submit" class="c1" value="Submit Button"/>
+            <!-- //only code 2 -->
+
+        </fieldset>
+    </form>
+</body>
+</html>

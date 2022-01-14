@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $(document).ready(function(){
+
+$("#afterlist").click(function(){
+    var prodname=$("#pname").val();
+    $('ol').append("<li>" + prodname + "</li>");
+});
+$("#beforelist").click(function(){
+    var prodname=$("#pname").val();
+    $('ol').prepend("<li>" + prodname + "</li>");
+});
+    
+});
+// $("#beforelist").click(function(){
+//     var prodname=$("#pname").val();
+//         $('ol').before("<li>" + prodname + "</li>");
+//         });
+        
+//         if(name=="123")
+// {
+
+// $("ol").before("<li> before 123</li>");
+// }
+
+// });
+
+// $("#btn1").click(function(){
+//         $("#p1").append("<b>I am BE(Computer Science)</b>");
+//         // $("ol").append("<li>Mobiles</li>");
+//         var prodname=$("#pname").val();
+//         $('ol').append("<li>" + prodname + "</li>");
+//         });
+
+// $("#afterlist").click(function(){
+// var nam2e=$('#i2').attr('src');
+// if(name=="chess.jpg")
+// {
+//     $$("ol").append("<li> before 123</li>");
+
+// }
+
+// });
+
+       });  
+    </script>
+
+</head>
+<body>
+<div style="background-color: aquamarine;width: auto;height: auto;">
+    <center>
+    <h1>Page Heading</h1>
+</center>
+</div>
+<div style="background-color: aqua; height: 400px; width: auto;">
+    <br/>
+    <input type=text id="pname" />
+
+    <Ol id="ol"><li>123</li>
+        <li>456</li>
+        <li>789</li>
+    </Ol>
+
+    <button id="beforelist" value="Before list">Click for inserting before the list</button>
+    <button id="afterlist" value="After list">Click for inserting after the list</button>
+</div>
+
+</body>
+</html>
