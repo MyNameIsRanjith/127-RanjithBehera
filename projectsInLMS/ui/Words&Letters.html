@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Words&Letters</title>
+</head>
+
+	<h1>
+		Word Count and Letter Count
+	</h1>
+	<textarea id="idtext" rows="10" cols="50" placeholder="Enter the sentence and click the appropriate option below to get the result">
+	</textarea>
+	<br><br>
+
+	<button onclick="countWords()">
+		Count Words
+	</button>
+	<button onclick="countLetters()">
+		Count Letters
+	</button>
+	<br><br>
+	<p> Word Count:
+		<span id="idword">0</span>
+	</p>
+	<p> Letters Count:
+		<span id="idletter">0</span>
+	</p>
+	<script>
+
+		// CountLetters
+		function countLetters() 
+		{
+			var text = document.getElementById("idtext").value;
+			var numLetters = 0;
+			for (var i = 0; i < text.length; i++) {
+				numLetters += 1;
+			}
+			document.getElementById("idletter").innerHTML = numLetters;
+			
+		}
+
+		// CountWords 
+		function countWords() 
+		{
+			var text = document.getElementById("idtext").value;
+			var numWords = 0;
+			for (var i = 0; i < text.length; i++) {
+				var currentCharacter = text[i];
+				if (currentCharacter == " ") {
+					numWords += 1;
+				}
+			}
+			numWords += 1;
+			document.getElementById("idword").innerHTML = numWords;
+		}
+	</script>
+</body>
+</html>
